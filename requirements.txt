@@ -1,0 +1,9 @@
+streamlit
+pdfplumber
+transformers
+torch
+python-pptx
+paddleocr
+Pillow
+numpy
+pyinstaller
