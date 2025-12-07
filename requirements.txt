@@ -1,9 +1,7 @@
 streamlit
 pdfplumber
+python-pptx
+pytesseract
+pillow
 transformers
 torch
-python-pptx
-paddleocr
-Pillow
-numpy
-pyinstaller
