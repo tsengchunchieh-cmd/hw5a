@@ -17,12 +17,6 @@ def load_detector(model_name: str = "roberta-base-openai-detector"):
         truncation=True,
     )
 
-@st.cache_resource
-def get_ocr():
-    return load_ocr()
-
-ocr = get_ocr()
-
 def detect_ai(text: str, detector):
     """Return aggregated label, aggregated score, and per-chunk info list.
 
