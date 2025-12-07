@@ -2,7 +2,6 @@ import streamlit as st
 import pdfplumber
 from transformers import pipeline
 from pptx import Presentation
-from paddleocr import PaddleOCR
 from PIL import Image
 import numpy as np
 import streamlit.components.v1 as components
@@ -17,10 +16,6 @@ def load_detector(model_name: str = "roberta-base-openai-detector"):
         model=model_name,
         truncation=True,
     )
-
-@st.cache_resource
-def load_ocr():
-    return PaddleOCR(lang='ch')
 
 @st.cache_resource
 def get_ocr():
